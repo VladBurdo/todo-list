@@ -1,0 +1,25 @@
+{
+  "taskList": [
+    {
+      "name": "Hit the gym",
+      "priority": 1,
+      "class": "checked"
+    },
+    {
+      "name": "Meet George",
+      "priority": 1,
+      "class": ""
+    },
+    {
+      "name": "Pay bills",
+      "priority": 0,
+      "class": ""
+    },
+    {
+      "name": "Buy eggs",
+      "priority": 1,
+      "class": "checked"
+    }
+  ]
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="mainList">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <title> Family ToDo List</title>
+</head >
+<body ng-controller="ToDoListController as list">
+  <div class="activ">
+    <div class="header">
+      <h2>Family To Do List</h2>
+    </div>
+    <div class="connection">
+      <h3>Connection</h3>
+    </div>
+    <div class="filter">
+      Search: <input class="search" ng-model="query"/>
+      <div class="checkboxdiv">
+        <input type="checkbox" class="checkbox" id="checkbox" ng-click="list.getPriority()"/>
+        <label for="checkbox">Show both important</label>
+      </div>
+    </div>
+    <div class="todoList">
+      <ul id="myUL">
+        <li   ng-click="list.complied($index)"
+              ng-class="task.class"
+              ng-repeat="task in list.taskList |
+                       filter:list.doneAddFilter |
+                       filter: query">
+          {{task.name}}
+          <span ng-click="list.close($index)" class="close">&times</span>
+      </ul>
+    </div>
+    <add-list  add-click="list.addList()"
+               new-data="list.newName"
+               check-click="list.setPriority()">
+    </add-list>
+  </div>
+  <script src="./JS/CONTROLLER/main.module.js"></script>
+  <script src="./JS/SERVICE/toDoList.module.js"></script>
+  <script src="./JS/SERVICE/httpList.module.js"></script>
+  <script src="./JS/CONTROLLER/toDoList.controller.js"></script>
+  <script src="./JS/SERVICE/toDoList.service.js"></script>
+  <script src="./JS/SERVICE/httpList.service.js"></script>
+  <script src="./JS/DIRECTIVE/addToDoList.module.js"></script>
+  <script src="./JS//DIRECTIVE/addToDoList.directive.js"></script>
+</body>
+</html>
