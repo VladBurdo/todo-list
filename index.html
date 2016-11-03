@@ -13,6 +13,9 @@
     </div>
     <div class="connection">
       <h3>Connection</h3>
+      <p ng-repeat="info in list.infoList">
+            {{info}}
+      </p>
     </div>
     <div class="filter">
       Search: <input class="search" ng-model="query"/>

@@ -10,13 +10,15 @@
   function ToDoListService($http, $q, httpListService) {
 
     var list = [];
+    var infoFile = '';
 
     var service = {
       getData: getData,
       getList: getList,
       delParagraph: delParagraph,
       addParagraph: addParagraph,
-      check: check
+      check: check,
+      getInfo: getInfo,
     };
     return service;
 
@@ -27,6 +29,7 @@
           addParagraph(res[obj]);
         }
       });
+      infoFile = httpListService.getFileInf();
     }
 
     //receiving todo list
@@ -52,6 +55,10 @@
       }else {
         list[index].class = "checked";
       }
+    }
+
+    function getInfo() {
+      return infoFile;
     }
 
 

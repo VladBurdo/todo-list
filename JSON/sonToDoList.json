@@ -1,0 +1,25 @@
+{
+  "taskList": [
+    {
+      "name": "Go to the gym",
+      "priority": 1,
+      "class": "checked"
+    },
+    {
+      "name": "Walk with a dog",
+      "priority": 1,
+      "class": ""
+    },
+    {
+      "name": "Sweep the room",
+      "priority": 0,
+      "class": "checked"
+    },
+    {
+      "name": "Visit grandmother",
+      "priority": 1,
+      "class": ""
+    }
+  ]
+
+}

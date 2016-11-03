@@ -1,0 +1,20 @@
+{
+  "taskList": [
+    {
+      "name": "Change tires in cars",
+      "priority": 1,
+      "class": ""
+    },
+    {
+      "name": "Repair the crane",
+      "priority": 1,
+      "class": ""
+    },
+    {
+      "name": "Put a scarecrow",
+      "priority": 1,
+      "class": "checked"
+    }
+  ]
+
+}
