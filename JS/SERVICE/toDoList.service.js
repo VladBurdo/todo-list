@@ -23,18 +23,17 @@
     return service;
 
     //receiving data
-    function getData() {
-      var res = httpListService.getData().then(function(res) {
-        for (var obj in res) {
-          addParagraph(res[obj]);
+    function getData(value) {
+      list.splice(0,list.length);
+      var res = $http.get(value).then(function(res) {
+        for (var obj in res.data.taskList) {
+          addParagraph(res.data.taskList[obj]);
         }
       });
-      infoFile = httpListService.getFileInf();
     }
 
     //receiving todo list
     function getList() {
-      getData();
       return list;
     }
 

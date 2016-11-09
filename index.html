@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="CSS/style1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
   <title> Family ToDo List</title>
 </head >
 <body ng-controller="ToDoListController as list">
   <div class="activ">
     <div class="header">
-      <h2>Family To Do List</h2>
+      <h2>Family To Do List </h2>
     </div>
     <div class="connection">
-      <h3>Connection</h3>
-      <p ng-repeat="info in list.infoList">
-            {{info}}
-      </p>
+      <ui-view></ui-view>
+      <a ui-sref="ToDoList.father" ui-sref-active="activNavig">father</a><br>
+      <a ui-sref="ToDoList.mother" ui-sref-active="activNavig">mother</a><br>
+      <a ui-sref="ToDoList.son" ui-sref-active="activNavig">son</a><br>
     </div>
     <div class="filter">
       Search: <input class="search" ng-model="query"/>
@@ -47,6 +48,8 @@
   <script src="./JS/SERVICE/toDoList.service.js"></script>
   <script src="./JS/SERVICE/httpList.service.js"></script>
   <script src="./JS/DIRECTIVE/addToDoList.module.js"></script>
-  <script src="./JS//DIRECTIVE/addToDoList.directive.js"></script>
+  <script src="./JS/DIRECTIVE/addToDoList.directive.js"></script>
+  <script src="./JS/ROUTER/router.module.js"></script>
+  <script src="./JS/ROUTER/myRouter.config.js"></script>
 </body>
 </html>

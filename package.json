@@ -1,0 +1,29 @@
+{
+  "name": "tasktodolist",
+  "version": "1.0.0",
+  "description": "job angularJS",
+  "main": "index.js",
+  "dependencies": {
+    "angular-ui-router": "^0.3.2"
+  },
+  "devDependencies": {
+    "angular-ui-router": "1.0.0-beta.3",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladByrdo/todo-list.git"
+  },
+  "author": "VladByrdo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladByrdo/todo-list/issues"
+  },
+  "homepage": "https://github.com/VladByrdo/todo-list#readme",
+  "scripts": {
+    "start": "http-server ./app",
+  }
+}

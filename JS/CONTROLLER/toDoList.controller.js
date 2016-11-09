@@ -25,8 +25,8 @@
     //activation and obtaining the desired sheet
     function activate() {
       console.log('OutputList Controller activated');
+
       vm.taskList = toDoListService.getList();
-      vm.infoList = toDoListService.getInfo();
     }
 
     //importance of the data filter

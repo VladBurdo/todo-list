@@ -5,6 +5,7 @@
   'app.toDoList',
   'app.httpList',
   'app.addToDoList',
+  'routerModule'
 ]);
 
 })();
