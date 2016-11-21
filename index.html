@@ -10,7 +10,7 @@
 <body ng-controller="ToDoListController as list">
   <div class="activ">
     <div class="header">
-      <h2>Family To Do List </h2>
+      <header-greeting></header-greeting>
     </div>
     <div class="connection">
       <ui-view></ui-view>
@@ -41,7 +41,7 @@
                check-click="list.setPriority()">
     </add-list>
   </div>
-  <script src="./JS/CONTROLLER/main.module.js"></script>
+  <script src="./bundle.js"></script>
   <script src="./JS/SERVICE/toDoList.module.js"></script>
   <script src="./JS/SERVICE/httpList.module.js"></script>
   <script src="./JS/CONTROLLER/toDoList.controller.js"></script>

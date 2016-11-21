@@ -1,3 +1,6 @@
+//import angular from 'angular';
+import headerModule from './JS/COMPONENT/header.component.js';
+
 (function() {
 
   angular.module('mainList', [
@@ -5,7 +8,8 @@
   'app.toDoList',
   'app.httpList',
   'app.addToDoList',
-  'routerModule'
+  'routerModule',
+  headerModule.name
 ]);
 
 })();
