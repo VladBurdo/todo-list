@@ -3,6 +3,7 @@
 
 - /CSS
 + /JS
+    +  /COMPONENT
     +  /CONTROLLER
     +  /DIRECTIVE
     +  /ROUTER
